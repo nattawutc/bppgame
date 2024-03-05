@@ -39,9 +39,11 @@ class HomeActivity : BaseActivity(),View.OnClickListener {
 
     private fun setAdapter(){
 
-        val dataset = arrayOf(R.drawable.speech, R.drawable.choice,
-            R.drawable.speech, R.drawable.choice,R.drawable.speech, R.drawable.choice)
-        val gameAdapter = GameAdapter(dataset,applicationContext){
+        val categoryPic = getAllCategoryPic()
+        val categoryName = getAllCategoryName()
+
+
+        val gameAdapter = GameAdapter(categoryPic,categoryName,applicationContext){
             Log.d(Tag.home , it.toString())
             startActivity(Intent(this,GameActivity::class.java).putExtra("type",it))
         }

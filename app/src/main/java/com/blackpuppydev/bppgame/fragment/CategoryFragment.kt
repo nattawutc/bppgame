@@ -11,24 +11,23 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.blackpuppydev.bppgame.R
 import com.blackpuppydev.bppgame.adapter.CategoryAdapter
+import com.blackpuppydev.bppgame.constance.PageLanding
+import com.blackpuppydev.bppgame.constance.Tag
 import com.blackpuppydev.bppgame.listener.FragmentListener
 import kotlinx.android.synthetic.main.fragment_category.*
 import java.lang.ClassCastException
 import java.lang.Exception
 
-private const val TYPE = "type"
 
 class CategoryFragment : Fragment() {
 
     private lateinit var listener:FragmentListener
 
-    private var type: Int? = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
             try{
-                type = it.getInt(TYPE)
                 listener = context as FragmentListener
             } catch (e: Exception){
 
@@ -43,11 +42,12 @@ class CategoryFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        val dataset = arrayOf(R.drawable.fruit, R.drawable.fruit,R.drawable.fruit, R.drawable.fruit,R.drawable.fruit, R.drawable.fruit,
-                                R.drawable.fruit, R.drawable.fruit,R.drawable.fruit, R.drawable.fruit)
+        val dataset = arrayOf(R.drawable.fruit, R.drawable.animal,R.drawable.fruit, R.drawable.animal,R.drawable.fruit, R.drawable.animal,
+                                R.drawable.fruit, R.drawable.animal,R.drawable.fruit, R.drawable.animal)
 
         val catAdapter = CategoryAdapter(dataset, context?.applicationContext!!){
-            Log.d(tag , it.toString())
+            listener.onSuccess(it.toString(), Tag.category)
+            listener.onPage(PageLanding.MODE,it)
         }
 
         cat_adapter.layoutManager = LinearLayoutManager(context)
@@ -61,7 +61,6 @@ class CategoryFragment : Fragment() {
         fun newInstance(type: Int, param2: String) =
             CategoryFragment().apply {
                 arguments = Bundle().apply {
-                    putInt(TYPE, type)
                 }
             }
     }

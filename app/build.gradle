@@ -45,6 +45,10 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
+    implementation 'com.github.markushi:circlebutton:1.1'
+
+    implementation 'com.github.IslamKhSh:CardSlider:1.0.1'
+
 //    def fragment_version = "1.6.2"
 //    implementation("androidx.fragment:fragment-ktx:$fragment_version")
 

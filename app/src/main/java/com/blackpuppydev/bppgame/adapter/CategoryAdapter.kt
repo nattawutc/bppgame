@@ -13,7 +13,6 @@ import com.blackpuppydev.bppgame.R
 class CategoryAdapter(private val drawable: Array<Int>,private val context: Context, private val callback:(Int) -> Unit)
     : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
-    private var tag:String = "CategoryAdapter"
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_category, parent, false)
