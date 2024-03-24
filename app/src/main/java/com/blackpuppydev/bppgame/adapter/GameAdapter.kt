@@ -29,6 +29,9 @@ class GameAdapter(private val drawable: Array<Int>,private val name:Array<String
         holder.img.setOnClickListener {
             callback.invoke(position)
         }
+
+
+
     }
 
     override fun getItemCount(): Int {

@@ -47,7 +47,8 @@ class ModeFragment : Fragment() {
 
         val dataset = arrayOf(R.drawable.speech, R.drawable.choice,
             R.drawable.speech, R.drawable.choice,R.drawable.speech, R.drawable.choice)
-        val modeAdapter = GameAdapter(dataset,context?.applicationContext!!){
+        val text = arrayOf("","")
+        val modeAdapter = GameAdapter(dataset,text,context?.applicationContext!!){
             listener.onSuccess(it.toString(),Tag.mode)
 //            listener.onPage(PageLanding.)
         }

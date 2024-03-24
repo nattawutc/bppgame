@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/base_button.xml" value="0.2955" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.2955" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2955" />
+        <entry key="app/src/main/res/layout/activity_base.xml" value="0.2776268115942029" />
+        <entry key="app/src/main/res/layout/activity_game.xml" value="0.33396148681640625" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.21423112067623412" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.2776268115942029" />
+        <entry key="app/src/main/res/layout/adapter_category.xml" value="0.28013029315960913" />
+        <entry key="app/src/main/res/layout/adapter_game.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_category.xml" value="0.3378787878787879" />
+        <entry key="app/src/main/res/layout/fragment_detail.xml" value="0.2980072463768116" />
+        <entry key="app/src/main/res/layout/fragment_level.xml" value="0.2980072463768116" />
+        <entry key="app/src/main/res/layout/fragment_mode.xml" value="0.2980072463768116" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

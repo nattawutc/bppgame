@@ -18,4 +18,4 @@ rootProject.name = "bppgame"
 include ':app'
 
 
-
+include ':game'

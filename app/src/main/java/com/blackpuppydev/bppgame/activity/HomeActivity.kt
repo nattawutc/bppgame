@@ -19,6 +19,7 @@ class HomeActivity : BaseActivity(),View.OnClickListener {
         setContentView(R.layout.activity_home)
 
         setAdapter()
+        setPager()
 
 
 
@@ -49,6 +50,11 @@ class HomeActivity : BaseActivity(),View.OnClickListener {
         }
         adapter_game.layoutManager = LinearLayoutManager(this);
         adapter_game.adapter = gameAdapter
+
+    }
+
+
+    private fun setPager(){
 
     }
 

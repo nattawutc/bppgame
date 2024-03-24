@@ -35,6 +35,20 @@
                     android:orientation="horizontal">
 
 
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="test"
+                            android:layout_centerInParent="true"/>
+
+
+
+                    </RelativeLayout>
+
                     <at.markushi.ui.CircleButton
                         android:layout_width="50dp"
                         android:layout_height="50dp"/>
